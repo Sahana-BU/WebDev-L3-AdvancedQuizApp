@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizQuest - Test Your Knowledge</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a href="#" class="logo" id="homeButton">
+            <span class="logo-icon">✦</span>
+            <span>QuizQuest</span>
+        </a>
+
+        <div class="header-badge">
+            <span>✧</span> Learn • Play • Grow
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <!-- HOME SECTION -->
+        <section class="welcome-card" id="homeSection">
+
+            <div class="welcome-icon">🧠</div>
+
+            <p class="eyebrow">YOUR KNOWLEDGE ADVENTURE STARTS HERE</p>
+
+            <h1>
+                Challenge Your <span>Mind.</span><br>
+                Discover Your Potential.
+            </h1>
+
+            <p class="welcome-description">
+                Test your knowledge, learn something new, and improve
+                your skills one question at a time.
+            </p>
+
+            <div class="welcome-stats">
+                <div class="stat-item">
+                    <strong>10+</strong>
+                    <span>Questions</span>
+                </div>
+
+                <div class="stat-item">
+                    <strong>4</strong>
+                    <span>Options</span>
+                </div>
+
+                <div class="stat-item">
+                    <strong>∞</strong>
+                    <span>Learning</span>
+                </div>
+            </div>
+
+            <div class="home-buttons">
+                <button type="button" id="startQuiz" class="primary-btn">
+                    Start Quiz <span>→</span>
+                </button>
+
+                <button type="button" id="dailyChallenge" class="secondary-btn">
+                    ✨ Daily Challenge
+                </button>
+            </div>
+
+            <p class="small-note">Take your time. Think carefully. Have fun!</p>
+
+        </section>
+
+
+        <!-- QUIZ SECTION -->
+        <section class="quiz-card" id="quizCard" style="display: none;">
+
+            <div class="quiz-topbar">
+                <button type="button" id="backHome" class="text-btn">
+                    ← Home
+                </button>
+
+                <div class="quiz-tag">QUIZ IN PROGRESS</div>
+
+                <div class="timer" id="timer">⏱ 15:00</div>
+            </div>
+
+            <div class="progress-info">
+                <span id="questionCounter">Question 1 of 10</span>
+                <span id="progressPercent">10%</span>
+            </div>
+
+            <div class="progress-track">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+
+            <div id="questionArea">
+
+                <h2 id="questionText">Your question will appear here.</h2>
+
+                <div id="answerOptions" class="answer-options"></div>
+
+            </div>
+
+            <div id="feedback" class="feedback" aria-live="polite"></div>
+
+            <div class="quiz-footer">
+                <span id="scoreDisplay">Score: 0</span>
+
+                <button type="button" id="nextQuestion" class="primary-btn" disabled>
+                    Next Question →
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- RESULTS SECTION -->
+        <section class="quiz-card results-card" id="resultsCard" style="display: none;">
+
+            <div class="welcome-icon">🏆</div>
+
+            <p class="eyebrow">QUIZ COMPLETED</p>
+
+            <h1>Your Results</h1>
+
+            <p class="welcome-description" id="resultMessage">
+                Great job completing the quiz!
+            </p>
+
+            <div class="result-score">
+                <span id="finalScore">0</span>
+                <span id="totalScore">/ 10</span>
+            </div>
+
+            <p id="percentageText">0%</p>
+
+            <div class="home-buttons">
+                <button type="button" id="restartQuiz" class="primary-btn">
+                    Try Again ↻
+                </button>
+
+                <button type="button" id="reviewAnswers" class="secondary-btn">
+                    Review Answers
+                </button>
+
+                <button type="button" id="resultsHome" class="secondary-btn">
+                    Back to Home
+                </button>
+            </div>
+
+            <div id="reviewArea" class="review-area"></div>
+
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <p>Made with 💜 for curious minds</p>
+        <p>© 2026 QuizQuest</p>
+    </footer>
+
+
+    <!-- Load JavaScript after the page elements -->
+    <script src="script.js"></script>
+
+</body>
+</html>
